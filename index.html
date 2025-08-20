@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KAiRO | BGMI Content Creator</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Segoe UI', Tahoma, sans-serif;
+      background: url('bg.jpg') no-repeat center center/cover;
+      color: #fff;
+      text-align: center;
+      padding: 30px;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* Dark overlay so text stays readable */
+    body::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0,0,0,0.7);
+      z-index: 0;
+    }
+
+    .container {
+      position: relative;
+      z-index: 1;
+    }
+
+    .logo {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      margin: 0 auto 20px;
+      border: 3px solid #00ffc6;
+      box-shadow: 0 0 20px #00ffc6, 0 0 40px #ff0055;
+    }
+
+    h1 {
+      font-size: 3rem;
+      color: #00ffc6;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      text-shadow: 0 0 15px #00ffc6, 0 0 25px #ff0055;
+    }
+    p.tagline {
+      margin: 10px 0 25px;
+      font-size: 1.2rem;
+      color: #bbb;
+    }
+
+    .game-details {
+      margin: 20px 0;
+      font-size: 1rem;
+      color: #eee;
+    }
+    .game-details span {
+      display: block;
+      margin: 5px 0;
+      font-weight: bold;
+      color: #00ffc6;
+    }
+
+    .links {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      max-width: 300px;
+      margin: 20px auto;
+    }
+    .links a {
+      text-decoration: none;
+      padding: 15px;
+      border-radius: 10px;
+      font-size: 1.1rem;
+      font-weight: bold;
+      background: #111;
+      color: #fff;
+      border: 2px solid #00ffc6;
+      box-shadow: 0 0 10px #00ffc6;
+      transition: all 0.3s ease-in-out;
+    }
+    .links a:hover {
+      background: #00ffc6;
+      color: #111;
+      transform: scale(1.05);
+      box-shadow: 0 0 20px #00ffc6, 0 0 30px #ff0055;
+    }
+
+    footer {
+      margin-top: 40px;
+      font-size: 0.9rem;
+      color: #666;
+    }
+
+    @media (max-width: 600px) {
+      h1 { font-size: 2.3rem; }
+      .links a { font-size: 1rem; padding: 12px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="logo.png" alt="KAiRO Logo" class="logo">
+    <h1>KAiRO</h1>
+    <p class="tagline">🎥 YouTuber | BGMI Content Creator | Gamer 🎮</p>
+
+    <div class="game-details">
+      <span>In-Game Name: KAiROūisLive</span>
+      <span>In-Game ID: 5172286675</span>
+    </div>
+
+    <div class="links">
+      <a href="https://chat.whatsapp.com/JpcR3WmFCd20fuVxtnKK6N?mode=ac_t" target="_blank">💬 WhatsApp</a>
+      <a href="https://discord.gg/SVWQnbzn6W" target="_blank">🎧 Discord</a>
+      <a href="https://www.instagram.com/kairo_is_live?igsh=cmZtemRiNWl5NWNm" target="_blank">📸 Instagram</a>
+      <a href="https://youtube.com/@kairobgmi76?si=d5gGt4hzc32G4hLC" target="_blank">▶️ YouTube</a>
+    </div>
+
+    <footer>© 2025 KAiRO | BGMI Portfolio</footer>
+  </div>
+</body>
+</html>
