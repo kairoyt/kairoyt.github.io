@@ -15,15 +15,15 @@
       min-height: 100vh;
       display: flex;
       flex-direction: column;
-      justify-content: center;
+      justify-content: flex-start; /* changed from center */
       position: relative;
-      overflow: hidden;
+      overflow: auto; /* changed from hidden */
     }
 
     /* Dark overlay so text stays readable */
     body::before {
       content: "";
-      position: absolute;
+      position: fixed;
       top: 0; left: 0; right: 0; bottom: 0;
       background: rgba(0,0,0,0.7);
       z-index: 0;
@@ -38,7 +38,7 @@
       width: 150px;
       height: 150px;
       border-radius: 50%;
-      margin: 0 auto 20px;
+      margin: 20px auto;
       border: 3px solid #00ffc6;
       box-shadow: 0 0 20px #00ffc6, 0 0 40px #ff0055;
     }
@@ -118,7 +118,6 @@
     </div>
 
     <div class="links">
-      <a href="https://chat.whatsapp.com/JpcR3WmFCd20fuVxtnKK6N?mode=ac_t" target="_blank">💬 WhatsApp</a>
       <a href="https://discord.gg/SVWQnbzn6W" target="_blank">🎧 Discord</a>
       <a href="https://www.instagram.com/kairo_is_live?igsh=cmZtemRiNWl5NWNm" target="_blank">📸 Instagram</a>
       <a href="https://youtube.com/@kairobgmi76?si=d5gGt4hzc32G4hLC" target="_blank">▶️ YouTube</a>
