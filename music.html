@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KAiRO | Music</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Segoe UI', Tahoma, sans-serif;
+      background: url('bg.jpg') no-repeat center center/cover;
+      color: #fff;
+      text-align: center;
+      padding: 30px;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      position: relative;
+      overflow: auto;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0,0,0,0.7);
+      z-index: 0;
+    }
+
+    .container {
+      position: relative;
+      z-index: 1;
+    }
+
+    .logo {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      margin: 20px auto;
+      border: 3px solid #00ffc6;
+      box-shadow: 0 0 15px #00ffc6, 0 0 30px #ff0055;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      color: #00ffc6;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      text-shadow: 0 0 12px #00ffc6, 0 0 20px #ff0055;
+    }
+
+    .music-card {
+      margin-top: 40px;
+      background: rgba(0,0,0,0.5);
+      padding: 20px;
+      border-radius: 15px;
+      display: inline-block;
+      box-shadow: 0 0 15px #00ffc6, 0 0 25px #ff0055;
+    }
+
+    .music-cover {
+      width: 250px;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 15px;
+      border: 3px solid #00ffc6;
+      box-shadow: 0 0 15px #00ffc6, 0 0 25px #ff0055;
+    }
+
+    .music-name {
+      display: block;
+      margin-top: 15px;
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #00ffc6;
+      text-decoration: none;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .music-name:hover {
+      color: #ff0055;
+      text-shadow: 0 0 15px #ff0055, 0 0 25px #00ffc6;
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 12px 20px;
+      border-radius: 10px;
+      background: #111;
+      border: 2px solid #00ffc6;
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    .back-link:hover {
+      background: #00ffc6;
+      color: #111;
+      box-shadow: 0 0 15px #00ffc6, 0 0 25px #ff0055;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="logo.png" alt="KAiRO Logo" class="logo">
+    <h1>My Music</h1>
+
+    <div class="music-card">
+      <img src="music-cover.jpg" alt="Music Cover" class="music-cover">
+      <a href="https://open.spotify.com/track/your-music-link" target="_blank" class="music-name">
+        Your Music Name
+      </a>
+    </div>
+
+    <a href="index.html" class="back-link">⬅ Back to Home</a>
+  </div>
+</body>
+</html>
