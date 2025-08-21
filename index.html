@@ -3,117 +3,99 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>KAiRO | BGMI Content Creator</title>
+  <title>KAiRO | BGMI Portfolio</title>
   <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
     body {
       font-family: 'Segoe UI', Tahoma, sans-serif;
       background: url('bg.jpg') no-repeat center center/cover;
-      color: #fff;
+      color: white;
       text-align: center;
-      padding: 30px;
       min-height: 100vh;
       display: flex;
       flex-direction: column;
       justify-content: center;
-      position: relative;
-      overflow: auto;
+      align-items: center;
     }
 
-    body::before {
-      content: "";
-      position: fixed;
-      top: 0; left: 0; right: 0; bottom: 0;
-      background: rgba(0,0,0,0.7);
-      z-index: 0;
+    .profile {
+      margin-bottom: 20px;
     }
 
-    .container {
-      position: relative;
-      z-index: 1;
-    }
-
-    .logo {
-      width: 150px;
-      height: 150px;
+    .profile img {
+      width: 180px;
+      height: 180px;
       border-radius: 50%;
-      margin: 20px auto;
-      border: 3px solid #00ffc6;
-      box-shadow: 0 0 20px #00ffc6, 0 0 40px #ff0055;
+      border: 4px solid #00ffc6;
+      box-shadow: 0 0 25px #00ffc6, 0 0 40px #ff0055;
     }
 
     h1 {
-      font-size: 2.5rem;
-      color: #fff;
       margin-top: 15px;
-      display: inline-block;
+      font-size: 2.2rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
     }
 
-    .tick {
-      width: 25px;
-      height: 25px;
-      vertical-align: middle;
-      margin-left: 8px;
+    h1 img {
+      width: 28px; /* Verified image size */
+      height: 28px;
     }
 
     .icons {
       display: flex;
       justify-content: center;
-      gap: 25px;
-      margin-top: 30px;
+      gap: 30px;
+      margin-top: 40px;
     }
 
-    .icons img {
-      width: 50px;
-      height: 50px;
-      border-radius: 50%; /* if icons are square */
+    .icons a img {
+      width: 55px;
+      height: 55px;
+      border-radius: 50%;
       border: 2px solid #00ffc6;
-      box-shadow: 0 0 10px #00ffc6;
+      box-shadow: 0 0 15px #00ffc6;
       transition: 0.3s;
     }
 
-    .icons img:hover {
-      transform: scale(1.1);
-      box-shadow: 0 0 20px #00ffc6, 0 0 30px #ff0055;
+    .icons a img:hover {
+      transform: scale(1.15);
+      box-shadow: 0 0 25px #00ffc6, 0 0 35px #ff0055;
     }
 
     footer {
-      margin-top: 50px;
+      position: absolute;
+      bottom: 15px;
       font-size: 0.9rem;
-      color: #666;
-    }
-
-    @media (max-width: 600px) {
-      h1 { font-size: 2rem; }
-      .icons img { width: 40px; height: 40px; }
+      opacity: 0.7;
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <!-- Your Logo -->
-    <img src="logo.png" alt="KAiRO Logo" class="logo">
-
-    <!-- Name + Blue Tick -->
-    <h1>KAiRO <img src="tick.png" alt="Verified" class="tick"></h1>
-
-    <!-- Social Icons -->
-    <div class="icons">
-      <a href="https://youtube.com/@kairobgmi76?si=d5gGt4hzc32G4hLC">
-        <img src="yt.png" alt="YouTube">
-      </a>
-      <a href="https://discord.gg/SVWQnbzn6W">
-        <img src="dis.png" alt="Discord">
-      </a>
-      <a href="https://www.instagram.com/kairo_is_live?igsh=cmZtemRiNWl5NWNm">
-        <img src="ins.png" alt="Instagram">
-      </a>
-      <a href="https://wa.me/yourwhatsapplink">
-        <img src="wa.png" alt="WhatsApp">
-      </a>
-    </div>
-
-    <footer>© 2025 KAiRO | BGMI Portfolio</footer>
+  <div class="profile">
+    <img src="logo.png" alt="KAiRO Logo">
+    <h1>KAiRO <img src="verified.png" alt="Verified"></h1>
   </div>
+
+  <div class="icons">
+    <a href="https://youtube.com/@kairobgmi76?si=d5gGt4hzc32G4hLC">
+      <img src="yt.png" alt="YouTube">
+    </a>
+    <a href="https://discord.gg/SVWQnbzn6W">
+      <img src="dis.png" alt="Discord">
+    </a>
+    <a href="https://www.instagram.com/kairo_is_live?igsh=cmZtemRiNWl5NWNm">
+      <img src="ins.png" alt="Instagram">
+    </a>
+  </div>
+
+  <footer>© 2025 KAiRO | BGMI Portfolio</footer>
 </body>
 </html>
