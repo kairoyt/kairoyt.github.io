@@ -15,7 +15,7 @@
       min-height: 100vh;
       display: flex;
       flex-direction: column;
-      justify-content: flex-start;
+      justify-content: center;
       position: relative;
       overflow: auto;
     }
@@ -43,87 +43,77 @@
     }
 
     h1 {
-      font-size: 3rem;
-      color: #00ffc6;
-      text-transform: uppercase;
-      letter-spacing: 3px;
-      text-shadow: 0 0 15px #00ffc6, 0 0 25px #ff0055;
-    }
-    p.tagline {
-      margin: 10px 0 25px;
-      font-size: 1.2rem;
-      color: #bbb;
-    }
-
-    .game-details {
-      margin: 20px 0;
-      font-size: 1rem;
-      color: #eee;
-    }
-    .game-details span {
-      display: block;
-      margin: 5px 0;
-      font-weight: bold;
-      color: #00ffc6;
-    }
-
-    .links {
-      display: flex;
-      flex-direction: column;
-      gap: 15px;
-      max-width: 300px;
-      margin: 20px auto;
-    }
-    .links a {
-      text-decoration: none;
-      padding: 15px;
-      border-radius: 10px;
-      font-size: 1.1rem;
-      font-weight: bold;
-      background: #111;
+      font-size: 2.5rem;
       color: #fff;
+      margin-top: 15px;
+      display: inline-block;
+    }
+
+    .tick {
+      width: 25px;
+      height: 25px;
+      vertical-align: middle;
+      margin-left: 8px;
+    }
+
+    .icons {
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      margin-top: 30px;
+    }
+
+    .icons img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%; /* if icons are square */
       border: 2px solid #00ffc6;
       box-shadow: 0 0 10px #00ffc6;
-      transition: all 0.3s ease-in-out;
+      transition: 0.3s;
     }
-    .links a:hover {
-      background: #00ffc6;
-      color: #111;
-      transform: scale(1.05);
+
+    .icons img:hover {
+      transform: scale(1.1);
       box-shadow: 0 0 20px #00ffc6, 0 0 30px #ff0055;
     }
 
     footer {
-      margin-top: 40px;
+      margin-top: 50px;
       font-size: 0.9rem;
       color: #666;
     }
 
     @media (max-width: 600px) {
-      h1 { font-size: 2.3rem; }
-      .links a { font-size: 1rem; padding: 12px; }
+      h1 { font-size: 2rem; }
+      .icons img { width: 40px; height: 40px; }
     }
   </style>
 </head>
 <body>
   <div class="container">
+    <!-- Your Logo -->
     <img src="logo.png" alt="KAiRO Logo" class="logo">
-    <h1>KAiRO</h1>
-    <p class="tagline">🎥 YouTuber | BGMI Content Creator | Gamer 🎮</p>
 
-    <div class="game-details">
-      <span>In-Game Name: KAiROūisLive</span>
-      <span>In-Game ID: 5172286675</span>
+    <!-- Name + Blue Tick -->
+    <h1>KAiRO <img src="tick.png" alt="Verified" class="tick"></h1>
+
+    <!-- Social Icons -->
+    <div class="icons">
+      <a href="https://youtube.com/@kairobgmi76?si=d5gGt4hzc32G4hLC">
+        <img src="yt.png" alt="YouTube">
+      </a>
+      <a href="https://discord.gg/SVWQnbzn6W">
+        <img src="dis.png" alt="Discord">
+      </a>
+      <a href="https://www.instagram.com/kairo_is_live?igsh=cmZtemRiNWl5NWNm">
+        <img src="ins.png" alt="Instagram">
+      </a>
+      <a href="https://wa.me/yourwhatsapplink">
+        <img src="wa.png" alt="WhatsApp">
+      </a>
     </div>
 
-    <div class="links">
-      <a href="https://discord.gg/SVWQnbzn6W" target="_blank">🎧 Discord</a>
-      <a href="https://www.instagram.com/kairo_is_live?igsh=cmZtemRiNWl5NWNm" target="_blank">📸 Instagram</a>
-      <a href="https://youtube.com/@kairobgmi76?si=d5gGt4hzc32G4hLC" target="_blank">▶️ YouTube</a>
-      <a href="music.html">🎵 Music</a> <!-- New Music button -->
-    </div>
-
-    <footer>© 2025 KAiRO</footer>
+    <footer>© 2025 KAiRO | BGMI Portfolio</footer>
   </div>
 </body>
 </html>
