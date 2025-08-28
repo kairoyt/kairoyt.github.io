@@ -103,6 +103,24 @@
       background-color: #e6b800;
     }
 
+    /* Show More Button */
+    .show-more-btn {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 10px 20px;
+      background-color: transparent;
+      border: 2px solid #ffcc00;
+      color: #ffcc00;
+      cursor: pointer;
+      border-radius: 5px;
+      transition: all 0.3s ease;
+    }
+
+    .show-more-btn:hover {
+      background-color: #ffcc00;
+      color: #0e0e0e;
+    }
+
     /* Video Carousel Styles */
     .video-carousel {
       position: relative;
@@ -192,7 +210,7 @@
     </div>
   </header>
 
-  <!-- D4RK ORG Section (Moved Up) -->
+  <!-- D4RK ORG Section -->
   <section class="d4rk-org" id="d4rk-org">
     <h2>D4RK ORG</h2>
     <p>
@@ -202,12 +220,17 @@
     <a href="https://forms.gle/ixqX1bqrk713mu5s7" target="_blank" class="join-btn">Join D4RK ORG</a>
   </section>
 
-  <!-- About Section -->
+  <!-- About Section with Show More -->
   <section class="about" id="about">
     <h2>About Me</h2>
-    <p>
-      I’m a passionate BGMI content creator with a love for intense battles, clutch revives, and chicken dinners. I create high-energy gameplay videos, helpful tips, and stream for my amazing community.
+    <p id="about-text">
+      I’m a passionate BGMI content creator with a love for intense battles, clutch revives, and chicken dinners. 
+      <span id="more-text" style="display: none;">
+        My journey started with casual gaming, but soon grew into streaming and competitive matches. 
+        Now, I aim to inspire and support upcoming players while building a strong gaming community.
+      </span>
     </p>
+    <button class="show-more-btn" id="show-more-btn">Show More</button>
   </section>
 
   <!-- Content Section with Video Carousel -->
@@ -226,6 +249,21 @@
   </footer>
 
   <script>
+    // Show More / Show Less functionality
+    const showMoreBtn = document.getElementById("show-more-btn");
+    const moreText = document.getElementById("more-text");
+
+    showMoreBtn.addEventListener("click", () => {
+      if (moreText.style.display === "none") {
+        moreText.style.display = "inline";
+        showMoreBtn.textContent = "Show Less";
+      } else {
+        moreText.style.display = "none";
+        showMoreBtn.textContent = "Show More";
+      }
+    });
+
+    // Video Carousel
     const videos = [
       "https://www.youtube.com/embed/7oqw8Bk_hgg",
       "https://www.youtube.com/embed/ecvqLHu3FP8",
